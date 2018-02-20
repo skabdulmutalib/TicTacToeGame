@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.tech2geek.tictactoegame.Main4Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose any pair"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        android:textColor="#000000"
+        android:id="@+id/chooseText"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/trumpvsobama"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chooseText"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/trump_vs_obama"
+        android:onClick="secondPageObama"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:src="@drawable/messi_vs_ronaldo"
+        android:layout_below="@+id/trumpvsobama"
+        android:layout_marginTop="30dp"
+        android:id="@+id/messivsronaldo"
+        android:onClick="secondPageRonaldo"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/modi_vs_rahul"
+        android:layout_below="@+id/messivsronaldo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/modivsrahul"
+        android:onClick="secondPageRahul"
+        />
+</RelativeLayout>

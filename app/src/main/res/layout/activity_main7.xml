@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tech2geek.tictactoegame.Main7Activity"
+    android:background="#1398d6">
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/player2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/player2"
+        android:layout_marginTop="175dp"
+        android:text="PLAYER 1"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAYER 2"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/player2"
+        android:layout_below="@+id/player1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="69dp"/>
+
+    <Button
+        android:textSize="15sp"
+        android:padding="20dp"
+        android:textColor="#123456"
+        android:drawableRight="@drawable/ic_play_arrow_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Start The game"
+        android:id="@+id/button"
+        android:onClick="startGame3"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/player2"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/player1"
+        android:layout_toRightOf="@+id/player1"
+        android:src="@drawable/narendra_modi"
+        android:id="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView10"
+        android:src="@drawable/rahul_gandhi" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic-Tac-Toe Game"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#f2d204"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:id="@+id/gameHeading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="DISCLAMER"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:onClick="disclamer"/>
+
+
+</RelativeLayout>
